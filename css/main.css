@@ -1,0 +1,93 @@
+
+/* reset */
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: #222328;
+    font-family: "맑은고딕" sans-serif;    
+}
+
+a {
+    text-decoration: none;
+}
+
+/* common */
+body {
+    width: 1000px;
+    background: #fff;/* 배경색 투명색, 그래서 배경색 흰색으로 설정함 */
+    font-size: 20px;
+
+}
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* header 영역 */
+header {
+    float: left;   
+}
+
+header .top {
+    height: 650px;
+    width: 200px;
+}
+header .top .logo {
+    height: 100%
+    width: 40px;
+    margin: 30px 0;
+}
+
+header .top .menu {
+    background: tomato;
+    width: 95%
+    /* text-align: center; */
+}
+header .top .menu .navi li {
+    /* border: 3px solid #000; */
+    box-sizing: border-box;
+    
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+
+    background: #222328;
+    
+}
+header .top .menu .navi li a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+header .top .menu .navi li a:hover {
+    background: #930930;
+    color: #ff0;
+
+}
+/* 이미지 슬라이드 영역 */
+.imgslide {
+    float: right;
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.imgslide .imgtext{
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    line-height: 50px;
+    background: rgba(40,40,40,0.3);
+
+    /* 암기하면 좋은 명령 4개셋 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
